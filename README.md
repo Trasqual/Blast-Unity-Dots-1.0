@@ -19,36 +19,36 @@ The project systems in execution order are:
 BoardInitializationSystem:
 This system handles the initial spawning of board elements.
 
-PlayerInputSystem
+PlayerInputSystem:
 This system handles the player input by detecting if and which block is clicked on and ands the block entity a "BlockClickedTag"
 
-MatchFindingSystem
+MatchFindingSystem:
 This system uses a floodfill algorithm to find similar colored blocks and boxes around the "ClickTag"ed block and adds them the "BlockPopTag" 
 
-BlockPopingSystem
+BlockPopingSystem:
 This system pops the BlockPopTagged entities meaning deals 1 damage to them. If the blocks hp is 0 they are destroyed.
 
-BlockFallTargetAssignmentSystem
+BlockFallTargetAssignmentSystem:
 This system checks for each blocks representing column entity to find the empty slots underneath and if there are any empty slots adds the "BlockFallTag"
 
-BlockFallMovementSystem
+BlockFallMovementSystem:
 This system uses parallel jobs to move the blocks that have the "BlockFallTag"
 
-BlockTypeAssignmentSystem
+BlockTypeAssignmentSystem:
 This system traverses the board using a floodfill algorithm and assigns block types to block so that their sprite changes according to the amount of same colored adjacent blocks.
 
-BlockSpawningFromTopSystem
+BlockSpawningFromTopSystem:
 This system queries over the column entities to get the empty positions and spawn neceserry amount of Blocks from the top with the "BlockFallTag"
 
-ShuffleSystem
+ShuffleSystem:
 This system check the board to find if any matches possible, if there aren't then it check if there is a solution possible with shuffle and if there is it uses a sorting algorithm to assign shuffle targets to the blocks. Due to the sorting algortihm used here, the board sometimes needs to get shuffled more than once but it should be rare occurance.
 
-ShuffleMovementSystem
+ShuffleMovementSystem:
 This system move the "ShuffleTag"ed blocks to their shuffle positions using parallel jobs.
 
 and
 
-BlockPresentationGOSystem
+BlockPresentationGOSystem:
 This system handles Block entity and Block Gameobject synchronizations. This was necessary due to the use of sprite renderer.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
