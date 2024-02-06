@@ -1,6 +1,6 @@
 # DOTS Blast
 
- This project was made using Unity Version 2022.3.18f1, using Unity's Entities package version 1.0.16
+ This project was made in a week for a case study using Unity Version 2022.3.18f1, using Unity's Entities package version 1.0.16
 
 The project is a color matching blast game resembling games like WonderBlast or ToonBlast.
 
