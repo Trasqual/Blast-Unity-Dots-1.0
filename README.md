@@ -70,10 +70,3 @@ Due to the lack of resources and time there are lots of things that could be bet
 * The flood fill algorithm could maybe writen as a single struct file instead of repeated code in matchfinding and  type assigning systems.
 
 All in all this project was really fun to build, thank you!
-
-***Resizable Board:***
-![](https://github.com/TrasqualInterviewCases/Blast/blob/main/2024-01-3018-13-32-ezgif.com-video-to-gif-converter%20(1).gif)
-
-
-***Shuffle System:***
-![](https://github.com/TrasqualInterviewCases/Blast/blob/main/2024-01-3018-12-34-ezgif.com-video-to-gif-converter.gif)
